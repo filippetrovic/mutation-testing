@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using MutationTestingExample.App;
 
-Console.WriteLine("Hello, World!");
+new RangeCheck().Check(1, 2, 3, 4, 5);
