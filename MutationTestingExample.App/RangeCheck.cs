@@ -5,7 +5,6 @@ public class RangeCheck
     private const int AllowedMin = 5;
     private const int AllowedMax = 10;
 
-
     public string Check(params int[] elements)
     {
         var min = elements.Min();
@@ -13,7 +12,7 @@ public class RangeCheck
 
         if (min > AllowedMin && max < AllowedMax)
         {
-            return $"In range";
+            return "In range";
         }
 
         return "Not in range";
