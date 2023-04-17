@@ -12,6 +12,8 @@ public class RangeCheckTest
         _rangeCheck = new RangeCheck();
     }
 
+    // ...
+
     [Fact]
     public void TestNotInRange()
     {
