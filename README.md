@@ -18,10 +18,22 @@ There are two test cases defined in `RangeCheckTest` which
 both together cover 100% `RangeCheck` class.
 
 ## Run
+
+### Tests
+```shell
+dotnet test
+```
+
+### Coverage
+```shell
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:ExcludeByFile="**/Program.cs"
+```
+
+### Mutation testing
 Stryker is used for mutation testing:https://github.com/stryker-mutator/stryker-net/
 
 Install and run:
-```
+```shell
 dotnet tool install -g dotnet-stryker
 dotnet stryker
 ```
