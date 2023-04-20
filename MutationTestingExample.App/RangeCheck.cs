@@ -10,7 +10,7 @@ public class RangeCheck
         var min = elements.Min();
         var max = elements.Max();
 
-        if (min > AllowedMin && max < AllowedMax)
+        if (min >= AllowedMin && max <= AllowedMax)
         {
             return "In range";
         }
